@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const methodOverride = require('method-override'); // permite el uso de los metodos put o delete
-app.use(methodOverride('_method'));
+/*const methodOverride = require('method-override'); // permite el uso de los metodos put o delete
+app.use(methodOverride('_method'));*/
 
 app.use(express.urlencoded({extended: false})); // URL encode - Tomar la información desde el formulario al req.body
 app.use(express.json()); // para que el servidor reciba archivos json
